@@ -1,0 +1,28 @@
+$left: right;
+$right: left;
+
+$ltr: rtl;
+$rtl: ltr;
+
+@import "../utilities/variableAr";
+@import "../utilities/normalize";
+@import "..//utilities/mediaQuery";
+@import "../utilities/mixins"; 
+
+/*components*/
+
+@import "../components/header";
+@import "../components/footer";
+@import "../components/accordion";  
+
+/*pages*/
+
+@import "../pages/home"; 
+@import "../pages/operation_management"; 
+@import "../pages/customs_clearance"; 
+@import "../pages/warehouse_management"; 
+
+
+/*only Ar*/
+
+@import "../utilities/AR";

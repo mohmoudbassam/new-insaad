@@ -1,0 +1,34 @@
+ 
+  
+.pagination a i {
+  transform: rotate(180deg);
+}
+
+/**/  
+.main_header .header_btns .drop-link > img,
+.breadCrumb__content .breadcrumb-item::after,
+.main-section .quickNews__slider .title img {
+  transform: rotate(180deg);
+}
+.shared .iconsm.search {
+  transform: rotate(0deg);
+}
+ 
+
+.filter .proForm .form-group.withIcon .fieldIcon {
+  transform: rotate(-90deg);
+}
+.generalModal .popupStart .img,
+.main-section .main-slider .swiper-slide,
+.main-section .main-slider .swiper-slide .row{
+  transform: scaleX(-1);
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}

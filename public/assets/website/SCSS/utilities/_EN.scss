@@ -1,0 +1,20 @@
+ 
+
+ 
+.operation_steps .steps .step .number {
+    background-image: url('../../images/pattern-en.png');
+}
+.cycle .cycles .item__img,
+.loading:before {
+    transform: scale(-1);
+}
+.cycle .cycles .item__img .num {
+    bottom: auto;
+    top: 5px;
+    left: auto;
+    right: 30px;
+}
+.cycle .cycles .item__img img,
+.cycle .cycles .item__img .num {
+    transform: rotate(180deg);
+}

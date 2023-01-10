@@ -1,0 +1,38 @@
+.avatar p {
+    border-radius: 50%;
+    margin: 4px;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    border: 1px solid #eee;
+    padding-left: 5px;
+    padding-right: 4px;
+    background-color: #f5f8fc;
+}
+.email-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid #eee;
+    background-color: #f5f8fc;
+    color: #0b192b;
+    text-align: center;
+    font-weight: bold;
+}
+.message-spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    background: #fff;
+    opacity: 0.5;
+}
+
+.unread {
+    background: #f8f9fa;
+}

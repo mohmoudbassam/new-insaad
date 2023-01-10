@@ -1,0 +1,6 @@
+ .table .thead-dark th
+{
+    width: 50%;
+    background-color: #003473;
+     border-color: transparent;
+}

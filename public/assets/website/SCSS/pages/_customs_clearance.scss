@@ -1,0 +1,47 @@
+.about-us.clearance.clearance-p {
+    background-color: transparent;
+}
+.clearance-sec {
+    background-color: #fafafa;
+    padding: 130px 0;
+    @include max1200 {
+        padding: 70px 0;
+    }
+    @include max992 {
+        padding: 50px 0;
+    }
+    .sec_title {
+        .desc{
+            color: $black
+        }
+        
+    }
+    .clearance-services {
+        display: flex;
+        justify-content: space-between; 
+        @include max1400 {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service {
+            padding: 20px;
+            padding-top: 50px;
+            text-align: center;
+            width: calc(100% / 5); 
+            margin-#{$right}: 33px;
+            @include max1400 {
+                width: 259px;
+                margin-#{$right}: 20px;
+                margin-bottom: 20px;
+            }
+            @include max992 {
+                padding: 20px;
+            }
+            .title {
+                margin-top: 50px;
+                font-size: 24px;
+                color: $black;
+            }
+        }
+    }
+}

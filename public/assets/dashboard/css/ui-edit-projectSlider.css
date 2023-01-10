@@ -1,0 +1,67 @@
+.owl-carousel {
+    touch-action: none;
+}
+.owl-slider{margin: 20px 0}
+.owl-slider .image{
+    position: relative;
+    margin: 0 auto;
+    width: 73%;}
+.owl-slider .image > img{
+    border-radius: 15px;
+}
+.owl-slider .image .overlay{
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+.owl-slider .image .overlay img{
+    width: auto;
+    filter: invert(1);
+}
+.owl-slider .image:hover .overlay
+{
+    visibility: visible;
+    opacity: 1;
+}
+.owl-slider.owl-theme .owl-nav [class*=owl-]
+{
+    position: absolute;
+    background:transparent;
+    color: #663399;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 23px;
+    top: 50%;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.owl-slider.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #FFF;
+}
+.owl-slider .owl-prev{right: -30px;}
+.owl-slider .owl-next{left: -30px;}
+.owl-slider.owl-carousel .owl-nav button.owl-prev,
+.owl-slider.owl-carousel .owl-nav button.owl-next{outline: 0;}
+
+@media screen and (max-width: 991px) {
+    .owl-slider .image {
+        width: auto;
+        margin: 0 10px;
+    }
+}

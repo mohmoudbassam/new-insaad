@@ -1,0 +1,25 @@
+<?php
+return [
+    "Account" => "الحساب",
+    "Account Setting" => "اعدادات الحساب",
+    "Already have an account" => "هل لديك حساب؟",
+    "Create A Account" => "انشاء حساب",
+    "Email" => "البريد الإلكتروني",
+    "Forgot password ?" => "هل نسيت كلمة المرور؟",
+    "New Customer" => "ليس لديك حساب؟",
+    "Personal Details" => "المعلومات الشخصية ",
+    "Register" => "تسجيل",
+    "Remember me" => "تذكرني",
+    "Sign up for a free account at our store. Registration is quick and easy. It allows you to be able to order from our shop. To start shopping click register." => "اشترك للحصول على حساب مجاني في متجرنا. تسجيل سريع وسهل. يسمح لك أن تكون قادرًا على الطلب من متجرنا. لبدء التسوق ، انقر فوق تسجيل.",
+    "create Account" => "إنشاء حساب",
+    "failed" => "بيانات الاعتماد هذه غير متطابقة مع البيانات المسجلة لدينا.",
+    "first name" => "الاسم الاول",
+    "last name" => "الاسم الاخير",
+    "login" => "تسجيل الدخول",
+    "logout" => "الخروج",
+    "name" => "اسم",
+    "password" => "كلمه السر",
+    "setting" => "الاعدادات",
+    "sign up" => "إنشاء حساب",
+    "throttle" => "عدد كبير جدا من محاولات الدخول. يرجى المحاولة مرة أخرى بعد :seconds ثانية."
+];

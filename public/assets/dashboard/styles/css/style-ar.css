@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+html {
+    direction: rtl !important; ;
+
+}
+
+ .layout-sidebar-compact .sidebar-left {
+    left: auto !important;
+    right: calc(-76px - 20px);
+}
+
+ .layout-sidebar-compact.sidenav-open .sidebar-left {
+    left: auto !important;
+    right: 0;
+}
+
+ .layout-sidebar-compact.sidenav-open .sidebar-left-secondary {
+    right: 76px;
+}
+
+ .layout-sidebar-compact .sidebar-left-secondary {
+    left: auto !important;
+    right: calc(-220px - 20px);
+}
+
+.layout-sidebar-compact .sidebar-left-secondary header {
+    text-align: right;
+}
+
+ .layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item a .dd-arrow {
+    margin-left: unset !important;
+    margin-right: auto;
+}
+
+.layout-sidebar-compact .sidebar-left-secondary .childNav li.nav-item a .nav-icon {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+ .layout-sidebar-compact .main-content-wrap {
+    float: left;
+}
+

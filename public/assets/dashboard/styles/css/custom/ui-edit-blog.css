@@ -1,0 +1,13 @@
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
+    height: 250px;
+}
+.blog-image{
+    border-radius: 12px;
+}
+.col-form-label{text-align: center;}
+
+@media screen and (max-width: 576px)
+{
+    .col-form-label{text-align: left;}
+
+}

@@ -1,0 +1,37 @@
+.sidebarFix{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sidebarFix a.navbar-brand{
+    margin-top: 0px !important;
+    margin: 0px;
+}
+.sidebarFix .brand-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabBorder {
+    border: 1px solid #5e5873 !important;
+    margin: 0px 5px !important;
+}
+
+.email-application .email-app-details.show{
+    width: 100%;
+}
+
+.swal-footer {
+    text-align: center !important;
+}
+
+.swal-footer .swal-button--danger,.swal-footer .swal-button--danger:hover {
+    background-color: #28C76F;
+}
+
+.swal-footer .swal-button--cancel,.swal-footer .swal-button--cancel:hover {
+    color: #FFFFFF;
+    background-color: #EA5455;
+}
+
