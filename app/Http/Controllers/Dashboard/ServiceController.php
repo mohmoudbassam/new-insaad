@@ -16,6 +16,7 @@ class ServiceController extends Controller
 
     public function index()
     {
+
         return view("dashboard.services.index");
     }
 
@@ -39,18 +40,22 @@ class ServiceController extends Controller
 
     public function edit(Service $service)
     {
+
         return view("dashboard.services.edit", compact("service"));
     }
 
     public function update(EditServiceRequest $request, Service $service)
     {
-        $data = $request->validated();
+
+     //  $data = $request->validated();
+        $data=request()->all();
         if ($request->has("image")) {
             $data['image'] = $this->uploadOne($request['image'], '400', '300', 'services');
         }
         if ($request->has("icon")) {
             $data['icon'] = $this->uploadOne($request['icon'], '400', '300', 'services');
         }
+
         $service->update($data);
         return redirect()->route('services.index', ['lang' => app()->getLocale()])->with("success",
             trans('dashboard.It was done successfully!'));
