@@ -24,6 +24,7 @@ class StoreApplicationRequest extends FormRequest
      */
     public function rules()
     {
+
         return [
             "full_name"                 => "required|string",
             "company_name"                 => "required|string",

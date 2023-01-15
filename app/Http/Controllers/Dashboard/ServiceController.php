@@ -47,7 +47,9 @@ class ServiceController extends Controller
     public function update(EditServiceRequest $request, Service $service)
     {
 
+//dd($request->all());
      //  $data = $request->validated();
+
         $data=request()->all();
         if ($request->has("image")) {
             $data['image'] = $this->uploadOne($request['image'], '400', '300', 'services');

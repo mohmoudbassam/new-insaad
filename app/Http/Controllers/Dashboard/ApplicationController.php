@@ -34,6 +34,7 @@ class ApplicationController extends Controller
 
     public function update(Application $application, EditApplicationRequest $request)
     {
+
         $data = [];
         foreach ($request->all() as $key => $value) {
             if ($request->hasFile($key)) {

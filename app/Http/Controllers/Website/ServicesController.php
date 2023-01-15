@@ -17,6 +17,7 @@ class ServicesController extends Controller
     }
     public function show($slug)
     {
+
         $service = Service::whereTranslation('slug',$slug)->firstOrFail();
 
         return view("website.services.show",compact("service"));

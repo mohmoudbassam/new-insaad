@@ -7,7 +7,7 @@
                 <div class="about-text" data-aos="fade-up">
                     <img src="/assets/website/images/cogwheel.svg" class="img-fluid icon" alt="wheel">
                     <h3 class="title">{{trans('home.operation-management')}}</h3>
-                    <p class="desc">{{trans('home.operation-management-desc')}}</p>
+                    <p class="desc">{!! $service->description !!}</p>
                     <a href="{{route('application.index',['lang'=>app()->getLocale()])}}" class="link">{{trans('home.request service')}}</a>
                 </div>
             </div>
