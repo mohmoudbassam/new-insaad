@@ -42,7 +42,7 @@ class ApplicationForm extends Component
                 "email"                => "nullable|email",
                 "phone"                => "required|string",
                 "online_store_platform"                => "required|string",
-                'online_store_url'       =>['required', new CustomUrl],
+                'online_store_url'       =>['required', 'regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/'],
                 "count_orders"                => "required|integer",
                 "count_orders_ads"             => "required|integer",
                 "message"             => "nullable|string",

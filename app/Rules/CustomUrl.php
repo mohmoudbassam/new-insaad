@@ -3,6 +3,7 @@
 namespace App\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
+use Illuminate\Support\Str;
 
 class CustomUrl implements Rule
 {
@@ -25,8 +26,11 @@ class CustomUrl implements Rule
      */
     public function passes($attribute, $value)
     {
+     dd(preg_match("^(?:\S+:\/\/)?[^\/]+\/?$",$value));
+
 
         $url = strpos($value, 'http') !== 0 ? "http://$value" : $value;
+        dd(filter_var($url, FILTER_VALIDATE_URL));
        return filter_var($url, FILTER_VALIDATE_URL);
 
     }
@@ -38,6 +42,7 @@ class CustomUrl implements Rule
      */
     public function message()
     {
+
         return 'Pleas Enter a valid URL';
     }
 }
