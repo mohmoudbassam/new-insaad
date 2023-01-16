@@ -89,8 +89,15 @@
         <div class="col-lg-6">
             <div class="form-group">
                 <label class="control-label" for="platform">{{trans('application.online store platform')}}</label>
-                <input type="text" wire:model="online_store_platform" name="online_store_platform" value="{{old('online_store_platform')}}" id="platform" class="form-control" />
+                <select type="search" class="form-control" wire:model="online_store_platform">
+                    <option value=""></option>
+                    <option value="salla">salla</option>
+                    <option value="zid">zid</option>
+                    <option value="shopify">shopify</option>
+                    <option value="other">other</option>
+                </select>
             </div>
+
             @error('online_store_platform')
             <div class="text-danger">
                 {{$message}}
