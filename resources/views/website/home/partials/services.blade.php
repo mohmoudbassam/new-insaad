@@ -1,8 +1,11 @@
+
 @foreach($services as $service_)
+
     <section class="about-us @if($loop->odd) operation @else clearance @endif  operation">
         <div class="container">
             <div class="row">
                 @if($loop->odd)
+
                     <div class="col-lg-7">
                         <div class="about-text" data-aos="fade-up">
                             <img src="{{asset($service_->icon)}}" class="img-fluid icon" alt="wheel">

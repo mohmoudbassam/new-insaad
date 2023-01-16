@@ -14,29 +14,19 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $numbers = Cache::rememberForever('numbers', function () {
-            return Count::with(["translations", 'image'])
-                ->where('available', 1)
-                ->orderBy("created_at", "desc")
-                ->limit(4)
-                ->get();
-        });
 
-        $about = Cache::rememberForever('about', function () {
-            return AboutUs::with(["translations"])->first();
-        });
+        $numbers = Count::with(["translations", 'image'])
+            ->where('available', 1)
+            ->orderBy("created_at", "desc")
+            ->limit(4)
+            ->get();
 
-        $services = Cache::rememberForever('services', function () {
-            return Service::with(["translations"])->get();
-        });
+        $about = AboutUs::with(["translations"])->first();
 
-        $partners = Cache::rememberForever('partners', function () {
-            return Partner::where('type',Partner::TYPE_PARTNER)->orderBy("created_at", "desc")->get();
-        });
+        $services = Service::with(["translations"])->get();
+        $partners = Partner::where('type',Partner::TYPE_PARTNER)->orderBy("created_at", "desc")->get();
 
-        $clients = Cache::rememberForever('clients', function () {
-            return Partner::where('type',Partner::TYPE_CLIENT)->orderBy("created_at", "desc")->get();
-        });
+        $clients = Partner::where('type',Partner::TYPE_CLIENT)->orderBy("created_at", "desc")->get();
 
         return view(
             'website.home.index',
