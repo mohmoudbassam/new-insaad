@@ -167,5 +167,9 @@ return array (
     'what said about us desc' => 'آراء داعمونا وعملائنا وشهادات شركائنا التي قالوها عنا',
     'why we choose' => 'مميزات الشركة',
     'designed' => 'تنفيذ',
+    'system_training'=>'تدريب النظام',
 
+    'system_operation_and_setup'=>'تشغيل وإعداد النظام',
+    'werhouse_mapping'=>'دراسة وتخطيط المساحه',
+    'return_sop'=>'إجراءات التشغيل النمطيه في الرجيع',
 );

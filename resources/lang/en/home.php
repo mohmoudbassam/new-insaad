@@ -24,9 +24,9 @@ return array (
   'Number of requests per week (without an advertising campaign)' => 'Number of requests per week (without an advertising campaign)',
   'Our Clients' => 'Our Clients',
   'Our Vision' => 'Our Vision',
-  'Please fill in the information below and we will contact you as soon as possible' => 
+  'Please fill in the information below and we will contact you as soon as possible' =>
   array (
-    '' => 
+    '' =>
     array (
       '' => 'Please fill in the information below and we will contact you as soon as possible.',
     ),
@@ -134,7 +134,7 @@ return array (
   'secure shopping' => 'التسوق الآمن',
   'selected services' => 'الخدمات المطلوبة',
   'send request' => 'ارسال الطلب',
-  'services' => 
+  'services' =>
   array (
     'custom-clearness' => 'custom-clearness',
     'isnaad services' => 'خدمات اسناد',
@@ -161,4 +161,8 @@ return array (
   'what said about us desc' => 'آراء داعمونا وعملائنا وشهادات شركائنا التي قالوها عنا',
   'why isnaad?' => 'Why isnaad?',
   'why we choose' => 'مميزات الشركة',
+    'system_training'=>'System Training',
+    'system_operation_and_setup'=>'System Operation & Setup',
+    'werhouse_mapping'=>'Warehouse Mapping',
+    'return_sop'=>'Return SOP',
 );
