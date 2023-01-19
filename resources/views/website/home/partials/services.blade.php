@@ -10,7 +10,7 @@
                         <div class="about-text" data-aos="fade-up">
                             <img src="{{asset($service_->icon)}}" class="img-fluid icon" alt="wheel">
                             <h3 class="title">{{$service_->title}}</h3>
-                            <p class="desc">{!! $service_->description !!}</p>
+                            <p class="desc" style="font-family: coco-l !important;">{!! $service_->description !!}</p>
                             <a href="{{route('website.services.show',['lang'=>app()->getLocale(),'slug'=>$service_->slug])}}" class="link">{{__('home.See More')}}</a>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="about-text" data-aos="fade-up">
                             <img src="{{asset($service_->icon)}}" class="img-fluid icon" alt="wheel">
                             <h3 class="title">{{$service_->title}}</h3>
-                            <p class="desc">{!! $service_->description !!}</p>
+                            <p class="desc" style="font-family: coco-l !important;">{!! $service_->description !!}</p>
                             <a href="{{route('website.services.show',['lang'=>app()->getLocale(),'slug'=>$service_->slug])}}" class="link">{{__('home.See More')}}</a>
                         </div>
                     </div>
