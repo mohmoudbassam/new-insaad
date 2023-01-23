@@ -1,4 +1,5 @@
 <?php
+
 Auth::routes(['verify' => true]);
 
 Route::get("language/{locale}/switch", "Website\LocalizationController")->name("language.switch");
@@ -67,4 +68,5 @@ Route::group(["prefix" => "{lang}", "middleware" => ["localize", "HtmlMinifier"]
 
 
 });
+
 

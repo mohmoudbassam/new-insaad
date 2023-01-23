@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Website;
 
 use App\Models\Application;
 use App\Rules\CustomUrl;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 class ApplicationForm extends Component
@@ -49,6 +50,7 @@ class ApplicationForm extends Component
             ]
         );
 
+        Mail::to('mohmoud14567@gmail.com')->send(new \App\Mail\Join($validatedData));
 
         Application::create($validatedData);
         $this->reset();
