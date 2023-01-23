@@ -31,6 +31,6 @@ class join extends Mailable
     public function build()
     {
 
-        return $this->markdown('emails.join',$this->data);
+        return $this->markdown('emails.join',$this->data)->subject('Isnaad Applications');
     }
 }
