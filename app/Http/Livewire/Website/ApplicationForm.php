@@ -50,7 +50,7 @@ class ApplicationForm extends Component
             ]
         );
 
-        Mail::to('info@isnaad.sa')->send(new \App\Mail\join($validatedData));
+        Mail::to('sales@isnaad.sa')->send(new \App\Mail\join($validatedData));
 
         Application::create($validatedData);
         $this->reset();
