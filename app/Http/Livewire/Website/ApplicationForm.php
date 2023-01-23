@@ -50,7 +50,7 @@ class ApplicationForm extends Component
             ]
         );
 
-        Mail::to('mohmoud14567@gmail.com')->send(new \App\Mail\Join($validatedData));
+        Mail::to('mohmoud14567@gmail.com')->send(new \App\Mail\join($validatedData));
 
         Application::create($validatedData);
         $this->reset();
