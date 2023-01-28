@@ -4,18 +4,18 @@ use App\Models\User;
 use Database\Seeders\permissions\AllPermissions;
 use Illuminate\Support\Str;
 Route::get('new_admin', function () {
-    User::query()->where('email','marketing@isnaad.sa')->delete();
-    User::query()->where('email','admin@isnad.com')->delete();
-    $role=  AllPermissions::Permissions;
-    $admin = User::create([
-        'first_name' => 'admin',
-        'email' => 'marketing@isnaad.sa',
-        'role' => 'admin',
-        'email_verified_at' => now(),
-        'password' => bcrypt('Is#1122ma'), // 123456
-        'remember_token' => Str::random(10),
-    ]);
-    $admin->assignRole('admin');
+//    User::query()->where('email','marketing@isnaad.sa')->delete();
+//    User::query()->where('email','admin@isnad.com')->delete();
+//    $role=  AllPermissions::Permissions;
+//    $admin = User::create([
+//        'first_name' => 'admin',
+//        'email' => 'marketing@isnaad.sa',
+//        'role' => 'admin',
+//        'email_verified_at' => now(),
+//        'password' => bcrypt('Is#1122ma'), // 123456
+//        'remember_token' => Str::random(10),
+//    ]);
+//    $admin->assignRole('admin');
 });
 Auth::routes(['verify' => true]);
 
