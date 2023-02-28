@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
 
-                @if($loop->odd)
+
 
                     <div class="col-lg-7">
                         <div class="about-text" data-aos="fade-up">
@@ -20,21 +20,7 @@
                             <img src="{{asset($service_->image)}}" class="img-fluid" alt="operation">
                         </div>
                     </div>
-                @else
-                    <div class="col-lg-5 ">
-                        <div class="about-img" data-aos="fade-up">
-                            <img src="{{asset($service_->image)}}" class="img-fluid" alt="operation">
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="about-text" data-aos="fade-up">
-                            <img src="{{asset($service_->icon)}}" class="img-fluid icon service_has_padding" alt="wheel">
-                            <h3 class="title">{{$service_->title}}</h3>
-                            <p class="desc" style="font-family: coco-l !important;">{!! $service_->description !!}</p>
-                            <a href="{{route('website.services.show',['lang'=>app()->getLocale(),'slug'=>$service_->slug])}}" class="link">{{__('home.See More')}}</a>
-                        </div>
-                    </div>
-                @endif
+
             </div>
         </div>
     </section>
