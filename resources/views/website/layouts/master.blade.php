@@ -36,6 +36,14 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
+
+        @media (max-width: 991px) {
+            .service_has_padding {
+                margin-top: 30px !important;
+            }
+        }
+
+
     </style>
     @stack('page-css')
 
