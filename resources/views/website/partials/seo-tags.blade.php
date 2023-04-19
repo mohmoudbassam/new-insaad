@@ -1,4 +1,4 @@
-<link rel="canonical" href="https://isnaadgroup.com/"/>
+<link rel="canonical" href="https://isnaad.sa/"/>
 <meta name="author" content="{{ config("settings.site_". app()->getLocale() . "_title") }}"/>
 <meta name="keywords" content="{{ $keywords ?? config("settings.site_". app()->getLocale() . "_keywords") }}"/>
 <meta name="description" content="{{$description}}"/>
