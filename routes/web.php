@@ -1,8 +1,13 @@
 <?php
 
+use App\Models\AboutUs;
+use App\Models\Count;
+use App\Models\Partner;
+use App\Models\Service;
 use App\Models\User;
 use Database\Seeders\permissions\AllPermissions;
 use Illuminate\Support\Str;
+
 Route::get('new_admin', function () {
 //    User::query()->where('email','marketing@isnaad.sa')->delete();
 //    User::query()->where('email','admin@isnad.com')->delete();
@@ -85,5 +90,6 @@ Route::group(["prefix" => "{lang}", "middleware" => ["localize", "HtmlMinifier"]
 
 
 });
+
 
 
