@@ -80,7 +80,7 @@ return array (
   'numbers' => 'أرقامنا',
   'online platform link' => 'المنصةالإلكترونية',
   'online store link' => 'online store link',
-  'operation-management' => 'OPERATIONS MANAGEMENT',
+  'operation-management' => 'Fulfillment Services',
   'operation-management-desc' => 'A series of integrated services, starting from bonding your online store to your customer requests directly. Then, receiving your inventory and managing your products through storing,  packaging and preparing orders and delivering them to your customer door. Eventually, providing you with reports for the most important numbers of your online store and sales, data analysis and your inventory details.',
   'operation-management-sec1-desc-1' => 'We receive your products at the inspection point, then classify and arrange them, and make sure of their quality before dispatching them to your storage area.',
   'operation-management-sec1-desc-2' => 'Our platform enables our clients to receive customers orders directly and then promptly check the inventory and prepare the orders for packaging, shipment and delivery.',

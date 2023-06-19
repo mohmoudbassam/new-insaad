@@ -20,7 +20,7 @@ class ServicesController extends Controller
     {
 
         $service = Service::whereTranslation('slug',$slug)->firstOrFail();
-
+        //dd($service->title);
         return view("website.services.show",compact("service"));
     }
 

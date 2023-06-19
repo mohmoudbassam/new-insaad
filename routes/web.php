@@ -28,9 +28,7 @@ Route::get("language/{locale}/switch", "Website\LocalizationController")->name("
 
 Route::get("/", function () {
     session()->replace(['locale' => app()->getLocale()]);
-
     return redirect("/" . app()->getLocale());
-
 });
 Route::get('sitemap.xml', 'Website\SitemapController@index');
 
