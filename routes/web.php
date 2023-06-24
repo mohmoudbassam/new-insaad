@@ -44,6 +44,8 @@ Route::group(["prefix" => "{lang}", "middleware" => ["localize", "HtmlMinifier"]
         Route::get("/search", ["uses" => "HomeController@search", "as" => "website.search"]);
 
         Route::get("/about-us", ["uses" => "AboutController", "as" => "website.about"]);
+        Route::get("/track", ["uses" => "trackController@index", "as" => "website.track"]);
+        Route::get("/getTrackingUrl/{tr?}", ["uses" => "trackController@getTrackingUrl", "as" => "website.getTrackingUrl"]);
         Route::get("/faqs", ["uses" => "FaqController", "as" => "website.faqs"]);
         Route::get("/gallery", ["uses" => "GalleryController@index", "as" => "website.gallery"]);
         Route::get("/contact-us", ["uses" => "MessagesController@index", "as" => "website.contact_us"]);

@@ -172,4 +172,8 @@ return array (
     'system_operation_and_setup'=>'تشغيل وإعداد النظام',
     'werhouse_mapping'=>'دراسة وتخطيط المساحه',
     'return_sop'=>'إجراءات التشغيل النمطيه في الرجيع',
+    'track_your_shipment'=>'تتبع شحنتك',
+    'enter_tracking_number'=>'أدخل رقم التتبع',
+    'click_tack'=>'تتبع',
+    'your_tracking_number_is_not_found'=>'رقم التتبع غير موجود',
 );

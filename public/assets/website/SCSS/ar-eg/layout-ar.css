@@ -9,7 +9,7 @@
 /***************
 
 /* == Colors */
-/*===================================== 
+/*=====================================
 	-- initialization --
 =====================================*/
 /*html, body, div, span, applet, object, iframe,
@@ -1040,7 +1040,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .main_header .navbar-light .navbar-collapse {
-    width: 60%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1049,11 +1049,11 @@ body {
   }
 }
 .main_header .navbar-light .navbar-nav .nav-item {
-  padding: 0 20px;
+  padding: 0 7px;
 }
 @media screen and (max-width: 1200px) {
   .main_header .navbar-light .navbar-nav .nav-item {
-    padding: 0 13px;
+    padding: 0 5px;
   }
 }
 @media screen and (max-width: 991px) {

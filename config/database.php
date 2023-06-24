@@ -62,6 +62,25 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+        'portal' => [
+            'driver' => env('portal_DB_CONNECTION'),
+            'host' => env('portal_DB_HOST'),
+            'port' => env('portal_DB_PORT'),
+            'database' => env('portal_DB_DATABASE_NAME'),
+            'username' => env('portal_DB_USERNAME'),
+            'password' => env('portal_DB_PASSWORD'),
+            'charset' => 'latin1',
+            'collation' => 'latin1_swedish_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => FALSE,
+            'engine' => null,
+            'options' => [
+                '\PDO::ATTR_EMULATE_PREPARES' => TRUE,
+                '\PDO::ATTR_TIMEOUT' => 40,
+                '\PDO::ATTR_PERSISTENT' => TRUE,
+            ],
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',

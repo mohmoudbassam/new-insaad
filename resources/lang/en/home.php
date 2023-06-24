@@ -38,6 +38,9 @@ return array (
   'What we do ?' => 'What we do ?',
   'WhatsApp' => 'WhatsApp',
   'about' => 'about',
+  'track_your_shipment' => 'track shipment',
+  'enter_tracking_number'=>'enter tracking number',
+  'click_tack'=>'click to tack',
   'about-description' => 'about-description',
   'about_us' => 'about_us',
   'achievements' => 'Numbers we achieved',
@@ -165,4 +168,5 @@ return array (
     'system_operation_and_setup'=>'System Operation & Setup',
     'werhouse_mapping'=>'Warehouse Mapping',
     'return_sop'=>'Return SOP',
+    'your_tracking_number_is_not_found'=>'Your tracking number is not found',
 );

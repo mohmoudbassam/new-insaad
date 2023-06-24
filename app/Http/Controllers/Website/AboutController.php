@@ -11,6 +11,7 @@ class AboutController extends Controller
 {
     public function __invoke()
     {
+
         $about = Cache::rememberForever('about', function () {
             return AboutUs::with(["translations"])->first();
         });
