@@ -27,12 +27,6 @@
                                    @if(url()->current() == route('website.about',['lang'=>app()->getLocale()])) active @endif "
                                    href="{{route('website.about',['lang'=>app()->getLocale()])}}">{{__('about.about us')}} </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link
-                                   @if(url()->current() == route('website.track',['lang'=>app()->getLocale()])) active @endif "
-                                   href="{{route('website.track',['lang'=>app()->getLocale()])}}">{{__('home.track_your_shipment')}}</a>
-                            </li>
-
 
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button"
