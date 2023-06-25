@@ -127,7 +127,7 @@
                 @include max1200 {
                     padding: 0 13px;
                 }
-                @include max992 { 
+                @include max992 {
                     padding: 0;
                     text-align: center;
                 }
@@ -309,7 +309,7 @@
                 font-size: 20px;
             }
             @include max1200 {
-                font-size: 15px; 
+                font-size: 15px;
             }
         }
     }

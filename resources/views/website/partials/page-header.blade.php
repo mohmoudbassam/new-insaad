@@ -27,11 +27,6 @@
                                    @if(url()->current() == route('website.about',['lang'=>app()->getLocale()])) active @endif "
                                    href="{{route('website.about',['lang'=>app()->getLocale()])}}"> {{__('about.about us')}} </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link
-                                   @if(url()->current() == route('website.track',['lang'=>app()->getLocale()])) active @endif "
-                                   href="{{route('website.track',['lang'=>app()->getLocale()])}}">{{__('home.track_your_shipment')}}</a>
-                            </li>
 
 
                             <li class="nav-item dropdown">
@@ -66,6 +61,7 @@
                             <li class="nav-item d-block d-lg-none">
                                 <div class="header_btns">
                                     <a href="http://portal.isnaad.sa/login" class="primaryBtn shared">{{trans('auth.login')}}</a>
+                                    <a href="{{route('website.track',['lang'=>app()->getLocale()])}}" class="primaryBtn shared">{{__('home.track_your_shipment')}}</a>
                                     <a href="{{route('application.index',['lang'=>app()->getLocale()])}}" class="primaryBtn shared">{{trans('home.start_with_us')}}</a>
                                     <a href="#contact" class="secondaryBtn shared"> <i class="fas fa-phone"></i> </a>
                                 </div>
@@ -74,11 +70,15 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-lg-4 col-md-4 order-2 d-none d-lg-flex">
-                <div class="header_btns">
-                    <a href="http://portal.isnaad.sa/login" class="primaryBtn shared">{{trans('auth.login')}}</a>
-
-                    <a href="{{route('application.index',['lang'=>app()->getLocale()])}}"  class="primaryBtn shared startNow">{{trans('home.start_with_us')}}</a>
+            <div class="col-lg-4 col-md-4 order-2 d-none d-lg-flex" >
+                <div class="header_btns d-flex justify-content-center" style="font-size: 15px !important;">
+                    <a href="http://portal.isnaad.sa/login" style="font-size: 15px !important;"
+                       class="primaryBtn shared">{{trans('auth.login')}}</a>
+                    <a href="{{route('website.track',['lang'=>app()->getLocale()])}}"
+                       style="font-size: 15px !important; margin-right: 20px"
+                       class="primaryBtn shared mr-5">{{__('home.track_your_shipment')}}</a>
+                    <a href="{{route('application.index',['lang'=>app()->getLocale()])}}"
+                       class="primaryBtn shared startNow">{{trans('home.start_with_us')}}</a>
                     <a href="#contact" class="secondaryBtn shared"> <i class="fas fa-phone"></i> </a>
                 </div>
             </div>
