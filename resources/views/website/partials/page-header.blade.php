@@ -81,7 +81,7 @@
                     <a href="http://portal.isnaad.sa/login" style="font-size: 15px !important;"
                        class="primaryBtn shared">{{trans('auth.login')}}</a>
                     <a href="{{route('website.track',['lang'=>app()->getLocale()])}}"
-
+                          style="
                        font-size: 13px !important;
                        @if(app()->getLocale() == 'ar')
                            margin-right: 15px
