@@ -94,7 +94,6 @@
                     <a href="#contact" class="secondaryBtn shared"> <i class="fas fa-phone"></i> </a>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
