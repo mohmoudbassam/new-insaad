@@ -10,6 +10,5 @@ return array (
   'Services' => 'خدماتنا',
   'about' => '',
   'about us' => 'من نحن',
-    'sdf'=>'sdf'
 
 );
