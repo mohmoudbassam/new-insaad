@@ -91,7 +91,7 @@
                     "
                     class="primaryBtn shared mr-5">{{__('home.track_your_shipment')}}</a>
                     <a href="{{route('application.index',['lang'=>app()->getLocale()])}}"
-                       class="primaryBtn shared startNow">{{trans('home.start_with_us')}}</a>
+                       class="primaryBtn shared startNow" style="font-size: 12px !important;">{{trans('home.start_with_us')}}</a>
                     <a href="#contact" class="secondaryBtn shared"> <i class="fas fa-phone"></i> </a>
                 </div>
             </div>
