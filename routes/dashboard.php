@@ -47,3 +47,14 @@ Route::put("home-image", "SettingsController@homeImage")->name('home.image.updat
 
 //news_letter
 Route::get('news-letters','NewsLetterController@index')->name('newsLetter.index');
+
+//articles
+Route::prefix('articles')->group(function (){
+    Route::get('/','ArticleController@index')->name('articles.index');
+    Route::get('list','ArticleController@list')->name('articles.list');
+    Route::get('create','ArticleController@create')->name('articles.create');
+    Route::post('store','ArticleController@store')->name('articles.store');
+    Route::get('edit/{article}','ArticleController@edit')->name('articles.edit');
+    Route::post('update','ArticleController@update')->name('articles.update');
+    Route::post('delete','ArticleController@delete')->name('articles.delete');
+});

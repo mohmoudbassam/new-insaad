@@ -9,7 +9,7 @@
         <div class="col-3">
             <div class="mb-2">
                 <select type="search" class="form-control" wire:model="filter.role">
-                    <option value="" >{{trans('dashboard.user.All users')}}</option>
+                    <option value="">{{trans('dashboard.user.All users')}}</option>
                     @foreach(\App\Models\User::ROLES_ARRAY as $role)
                         <option value="{{$role}}">{{$role}}</option>
                     @endforeach

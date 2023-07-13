@@ -128,6 +128,9 @@ return array (
     'fast contact' => 'اتصال سريع',
     'from instagram' => ' انستغرام',
     'home' => ' الرئيسية',
+    'home_isnaad'=>'اسناد للخدمات اللوجستية',
+    'blogs' => 'المدونة',
+
     'info' => 'معلومات',
 
     'language' => 'اللغة',

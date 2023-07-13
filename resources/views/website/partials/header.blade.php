@@ -24,6 +24,12 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link
+                                @if(url()->current() == route('website.blog',['lang'=>app()->getLocale()])) active @endif
+                                " aria-current="page"
+                                   href="{{route('website.blog',['lang'=>app()->getLocale()])}}"> {{trans('home.blogs')}} </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link
                                    @if(url()->current() == route('website.about',['lang'=>app()->getLocale()])) active @endif "
                                    href="{{route('website.about',['lang'=>app()->getLocale()])}}">{{__('about.about us')}} </a>
                             </li>

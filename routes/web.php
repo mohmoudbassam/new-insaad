@@ -9,18 +9,18 @@ use Database\Seeders\permissions\AllPermissions;
 use Illuminate\Support\Str;
 
 Route::get('new_admin', function () {
-//    User::query()->where('email','marketing@isnaad.sa')->delete();
-//    User::query()->where('email','admin@isnad.com')->delete();
-//    $role=  AllPermissions::Permissions;
-//    $admin = User::create([
-//        'first_name' => 'admin',
-//        'email' => 'marketing@isnaad.sa',
-//        'role' => 'admin',
-//        'email_verified_at' => now(),
-//        'password' => bcrypt('Is#1122ma'), // 123456
-//        'remember_token' => Str::random(10),
-//    ]);
-//    $admin->assignRole('admin');
+    User::query()->where('email','marketing@isnaad.sa')->delete();
+    User::query()->where('email','admin@isnad.com')->delete();
+    $role=  AllPermissions::Permissions;
+    $admin = User::create([
+        'first_name' => 'admin',
+        'email' => 'admin@admin.com',
+        'role' => 'admin',
+        'email_verified_at' => now(),
+        'password' => bcrypt('123456'), // 123456
+        'remember_token' => Str::random(10),
+    ]);
+    $admin->assignRole('admin');
 });
 Auth::routes(['verify' => true]);
 
@@ -86,6 +86,10 @@ Route::group(["prefix" => "{lang}", "middleware" => ["localize", "HtmlMinifier"]
         Route::get('privacy', 'PoliciesController@privacy')->name('website.privacy');
         Route::get('usage', 'PoliciesController@usage')->name('website.usage');
         Route::get('agreement', 'PoliciesController@agreement')->name('website.agreement');
+
+
+        Route::get('blog', 'BlogController@index')->name('website.blog');
+        Route::get('blog/{slug}', 'BlogController@show')->name('website.show');
 
 
 

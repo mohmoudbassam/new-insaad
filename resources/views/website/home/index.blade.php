@@ -11,7 +11,6 @@
             'description' => config("settings.site_" . app()->getLocale() . "_meta"),
             'image' => config("settings.site_logo"),
                                                 'title' =>  __("home.home")
-
         ])
 @endsection
 

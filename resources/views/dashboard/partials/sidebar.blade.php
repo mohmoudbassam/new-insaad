@@ -10,54 +10,62 @@
                 </a>
             </li>
             <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
-                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
-                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
-                            data-feather="disc" data-ticon="disc">
+                        class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                        class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                        data-feather="disc" data-ticon="disc">
                     </i>
                 </a>
             </li>
         </ul>
     </div>
-{{--    <div class="shadow-bottom"></div>--}}
+    {{--    <div class="shadow-bottom"></div>--}}
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
             <li class="@if (Route::current()->getName() == 'dashboard.index') active @endif nav-item"><a
-                        class="d-flex align-items-center"
-                        href="{{route("dashboard.index", ["lang" => app()->getLocale()])}}"><i
-                            data-feather="home"></i><span class="menu-title text-truncate"
-                                                          data-i18n="Email">{{trans('dashboard.main.dashboard')}}</span></a>
+                    class="d-flex align-items-center"
+                    href="{{route("dashboard.index", ["lang" => app()->getLocale()])}}"><i
+                        data-feather="home"></i><span class="menu-title text-truncate"
+                                                      data-i18n="Email">{{trans('dashboard.main.dashboard')}}</span></a>
             </li>
-{{--            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i--}}
-{{--                        data-feather="more-horizontal"></i>--}}
-{{--            </li>--}}
+            {{--            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i--}}
+            {{--                        data-feather="more-horizontal"></i>--}}
+            {{--            </li>--}}
 
             @can('view application')
                 <!--=============== settings Start ================-->
-                    <li class="@if (Route::current()->getName() == 'applications.show')  active @endif">
-                        <a class="d-flex align-items-center"
-                           href="{{ route("applications.index", ["lang" => app()->getLocale()])}}">
-                            <i data-feather='file-plus'></i>
-                            <span class="menu-item text-truncate"
-                                  data-i18n="Permission">{{trans('dashboard.main.applications')}}</span>
-                        </a>
-                    </li>
-                    <!--=============== End settings ================-->
+                <li class="@if (Route::current()->getName() == 'applications.show')  active @endif">
+                    <a class="d-flex align-items-center"
+                       href="{{ route("applications.index", ["lang" => app()->getLocale()])}}">
+                        <i data-feather='file-plus'></i>
+                        <span class="menu-item text-truncate"
+                              data-i18n="Permission">{{trans('dashboard.main.applications')}}</span>
+                    </a>
+                </li>
+                <li class="@if (Route::current()->getName() == 'applications.show')  active @endif">
+                    <a class="d-flex align-items-center"
+                       href="{{ route("articles.index", ["lang" => app()->getLocale()])}}">
+                        <i data-feather='file-plus'></i>
+                        <span class="menu-item text-truncate"
+                              data-i18n="Permission">{{trans('dashboard.articles')}}</span>
+                    </a>
+                </li>
+                <!--=============== End settings ================-->
             @endcan
             @can(['view user' , 'view role'])
                 <li class="@if (Route::current()->getName() == 'users.index' || Route::current()->getName() == 'roles.index' )  open @endif nav-item has-sub">
                     <a
-                            class="d-flex align-items-center" href="index.html">
+                        class="d-flex align-items-center" href="index.html">
                         <i
-                                data-feather="user"></i>
+                            data-feather="user"></i>
                         <span class="menu-title text-truncate"
                               data-i18n="Dashboards">{{trans('dashboard.main.Users') }} & {{ trans('dashboard.main.roles')}}</span></a>
                     <ul class="menu-content">
                         <li class=" @if (Route::current()->getName() == 'users.index' )   active @endif nav-item"><a
-                                    class="d-flex align-items-center"
-                                    href="{{ route("users.index", ["lang" => app()->getLocale()])}}"><i
-                                        data-feather="circle"></i><span class="menu-title text-truncate"
-                                                                        data-i18n="Email">{{trans('dashboard.main.Users')}}</span></a>
+                                class="d-flex align-items-center"
+                                href="{{ route("users.index", ["lang" => app()->getLocale()])}}"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                                                    data-i18n="Email">{{trans('dashboard.main.Users')}}</span></a>
                         </li>
                         <li class="@if (Route::current()->getName() == 'roles.index')  active @endif nav-item">
                             <a class="d-flex align-items-center"
@@ -96,7 +104,7 @@
 
 
             @can('view setting')
-            <!--=============== settings Start ================-->
+                <!--=============== settings Start ================-->
                 <li class="@if (Route::current()->getName() == 'settings.show')  active @endif">
                     <a class="d-flex align-items-center"
                        href="{{ route("settings.show", ["lang" => app()->getLocale()])}}">
@@ -109,31 +117,31 @@
             @endcan
 
 
-        <!--=============== Services Start ================-->
+            <!--=============== Services Start ================-->
             @can('view services')
                 <li class="@if (Route::current()->getName() == 'services.index' )  active @endif">
                     <a class="d-flex align-items-center"
                        href="{{ route("services.index", ["lang" => app()->getLocale()])}}"><i
-                                data-feather="circle"></i><span class="menu-item text-truncate"
-                                                                data-i18n="Permission">{{trans('dashboard.content.Services')}}</span>
+                            data-feather="circle"></i><span class="menu-item text-truncate"
+                                                            data-i18n="Permission">{{trans('dashboard.content.Services')}}</span>
                     </a>
                 </li>
             @endcan
-        <!--=============== end Services ================-->
-{{--            @can('view policy')--}}
-{{--            <!--=============== policies Start ================-->--}}
-{{--                <li class="@if (Route::current()->getName() == 'policies')  active @endif">--}}
-{{--                    <a class="d-flex align-items-center"--}}
-{{--                       href="{{ route('policies', ["lang" => app()->getLocale()]) }}">--}}
-{{--                        <i data-feather='file-text'></i>--}}
-{{--                        <span class="menu-item text-truncate"--}}
-{{--                              data-i18n="Permission">{{trans('dashboard.policies.All Policies')}}</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <!--=============== End policies ================-->--}}
-{{--            @endcan--}}
+            <!--=============== end Services ================-->
+            {{--            @can('view policy')--}}
+            {{--            <!--=============== policies Start ================-->--}}
+            {{--                <li class="@if (Route::current()->getName() == 'policies')  active @endif">--}}
+            {{--                    <a class="d-flex align-items-center"--}}
+            {{--                       href="{{ route('policies', ["lang" => app()->getLocale()]) }}">--}}
+            {{--                        <i data-feather='file-text'></i>--}}
+            {{--                        <span class="menu-item text-truncate"--}}
+            {{--                              data-i18n="Permission">{{trans('dashboard.policies.All Policies')}}</span>--}}
+            {{--                    </a>--}}
+            {{--                </li>--}}
+            {{--                <!--=============== End policies ================-->--}}
+            {{--            @endcan--}}
             @can('view faq')
-            <!--=============== faqs Start ================-->
+                <!--=============== faqs Start ================-->
                 <li class="@if (Route::current()->getName() == 'faqs.index')  active @endif">
                     <a class="d-flex align-items-center"
                        href="{{ route('faqs.index', ["lang" => app()->getLocale()]) }}">
@@ -146,7 +154,7 @@
             @endcan
 
             @can('view inbox')
-            <!--=============== client_comment Start ================-->
+                <!--=============== client_comment Start ================-->
                 <li class="@if (Route::current()->getName() == 'messages.index')  active @endif">
                     <a class="d-flex align-items-center"
                        href="{{ route('messages.index', ["lang" => app()->getLocale()]) }}">
@@ -161,7 +169,7 @@
 
 
             @can('view aboutUs')
-            <!--=============== aboutUs Start ================-->
+                <!--=============== aboutUs Start ================-->
                 <li class="@if (Route::current()->getName() == 'aboutUs')  active @endif">
                     <a class="d-flex align-items-center"
                        href="{{ route('aboutUs', ["lang" => app()->getLocale()]) }}">
@@ -176,7 +184,7 @@
 
 
             @can('view count')
-            <!--=============== footer Start ================-->
+                <!--=============== footer Start ================-->
                 <li class="@if (Route::current()->getName() == 'counts')  active @endif">
                     <a class="d-flex align-items-center"
                        href="{{ route('counts.index', ["lang" => app()->getLocale()]) }}">
@@ -188,18 +196,18 @@
                 <!--=============== End footer ================-->
             @endcan
 
-                        @can('view translation')
-                        <!--=============== Translation Start ================-->
-                            <li class="@if (Route::current()->getName() == 'languages.translations.index')  active @endif">
-                                <a class="d-flex align-items-center"
-                                   href="{{ route('languages.translations.index', config('app.locale')) }}" target="_blank">
-                                    <i data-feather='globe'></i>
-                                    <span class="menu-item text-truncate"
-                                          data-i18n="Permission">{{ __('translation::translation.translations') }}</span>
-                                </a>
-                            </li>
-                            <!--=============== End Translation ================-->
-                        @endcan
+            @can('view translation')
+                <!--=============== Translation Start ================-->
+                <li class="@if (Route::current()->getName() == 'languages.translations.index')  active @endif">
+                    <a class="d-flex align-items-center"
+                       href="{{ route('languages.translations.index', config('app.locale')) }}" target="_blank">
+                        <i data-feather='globe'></i>
+                        <span class="menu-item text-truncate"
+                              data-i18n="Permission">{{ __('translation::translation.translations') }}</span>
+                    </a>
+                </li>
+                <!--=============== End Translation ================-->
+            @endcan
         </ul>
     </div>
 </div>
