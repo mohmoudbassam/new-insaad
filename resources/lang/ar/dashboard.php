@@ -6,17 +6,14 @@ return array (
   'Our Company' => 'شركتنا',
   'Services' => 'خدماتنا',
   'Thumbnail' => 'الصورة المصغرة',
-
-  'application' =>
+  'application' => 
   array (
     'AGENT' => 'الوكلاء',
     'Add Application' => 'إضافة إستمارة',
     'Agents' => 'الوكلاء',
     'All applications' => 'جميع الاستمارات',
     'Application' => 'استمارة',
-
     'Email' => 'بريد الكترونى',
-
     'Name' => 'الإسم',
     'New' => ' الاستمارات الجديدة',
     'Order date' => 'تاريخ الطلب',
@@ -25,7 +22,6 @@ return array (
     'Print Invoice' => 'فاتورة طباعة',
     'Quantity' => 'كمية',
     'Reading Date' => 'تاريخ القراءة',
-
     'Type' => 'النوع',
     'UNIVERSITY' => 'جامعات',
     'Website' => 'الموقع',
@@ -48,7 +44,7 @@ return array (
     'show application' => 'عرض الاستمارة',
     'whatsapp' => 'واتساب',
   ),
-  'category' =>
+  'category' => 
   array (
     'Action' => 'عمل',
     'Add BLOG' => 'إضافة قسم',
@@ -69,8 +65,7 @@ return array (
     'model' => 'القسم',
     'type' => 'نوع',
   ),
-
-  'content' =>
+  'content' => 
   array (
     'Add BLOG' => 'أضف مدونة',
     'Add Blog' => 'أضف مدونة',
@@ -120,12 +115,12 @@ return array (
     'description' => 'وصف',
     'model' => 'مدونة',
   ),
-  'count' =>
+  'count' => 
   array (
     'add count' => 'اضافة عدد',
     'count' => 'العدد',
   ),
-  'faq' =>
+  'faq' => 
   array (
     'Add faq' => 'اضافة سؤال متكرر',
     'All faq' => 'الأسألة المتكررة',
@@ -139,13 +134,13 @@ return array (
     'faqs' => 'الأسألة المتكرة',
     'question' => 'السؤال',
   ),
-  'footer' =>
+  'footer' => 
   array (
     'add footer link' => 'اضافة لينك في الفوتر',
     'link' => 'الرابط',
   ),
   'has content' => 'لديه محتويات',
-  'inbox' =>
+  'inbox' => 
   array (
     'Browse' => 'تصفح',
     'Email Address' => 'عنوان بريد الكتروني',
@@ -155,12 +150,12 @@ return array (
     'Send Message' => 'إرسال رسالة',
     'client' => 'زبون',
     'model' => 'صندوق الوارد',
-    'no messages available' =>
+    'no messages available' => 
     array (
       '' => 'لا توجد رسائل متاحة.',
     ),
   ),
-  'main' =>
+  'main' => 
   array (
     'Account settings' => 'اعدادات الحساب',
     'Actions' => 'اجراءات',
@@ -170,12 +165,11 @@ return array (
     'All rights reserved' => 'كل الحقوق محفوظة',
     'Blog' => 'مدونة',
     'Categories' => 'الاقسام',
-    'Clients' => 'عملاء',
+    'Clients' => 'شركاؤنا',
     'Created At' => 'أنشئت في',
     'Description In Arabic' => 'الوصف باللغة العربية',
     'Description In English' => 'الوصف باللغة الإنجليزية',
     'Image' => 'صورة',
-    'icon' => 'رمز',
     'Inbox' => 'صندوق الوارد',
     'Latest Orders' => 'آخر الطلبات',
     'Latest applications' => 'أحدث الاستمارات',
@@ -231,6 +225,8 @@ return array (
     'footer' => 'الفوتر',
     'galleries' => 'معرض الصور',
     'home' => 'الصفحة الرئيسية',
+    'icon' => 'رمز',
+    'is_read' => 'تم القراءة',
     'language' => 'اللغة',
     'logistics' => 'لوجيستي',
     'mission' => 'الطموح',
@@ -241,34 +237,33 @@ return array (
     'roles' => 'الأدوار',
     'study-languages' => 'لغة الدراسة',
     'success' => 'نجاح',
-    'is_read' => 'تم القراءة',
     'type' => 'نوع',
     'vision' => 'الرؤية',
   ),
   'message deleted successfully!' => 'تم حذف الرسالة بنجاح!',
-  'notification' =>
+  'notification' => 
   array (
     'New' => 'جديد',
-    'New Application old' => 'طلب جديد',
     'New Application' => 'طلب جديد  #:id',
-    'Old Application' => 'تم تعديل الطلب #:id',
-    'Payment Uploaded' => 'تم تحميل إيصال دفع الطلب #:id',
+    'New Application old' => 'طلب جديد',
     'New Order' => 'طلب جديد',
     'Notifications' => 'الاشعارات',
+    'Old Application' => 'تم تعديل الطلب #:id',
+    'Payment Uploaded' => 'تم تحميل إيصال دفع الطلب #:id',
     'Read all notifications' => 'قراءة كل الاشعارات',
   ),
-  'partner' =>
+  'partner' => 
   array (
     'Add Partner' => 'اضافة جديد',
-    'Edit Partner' => 'تعديل الشركاء والداعمون',
-    'Partners & Clients' => 'الشركاء و الداعمون ',
-    'Partners' => 'الشركاء ',
     'Clients' => 'الداعمون',
-    'partner' => 'الشركاء ',
+    'Edit Partner' => 'تعديل الشركاء والداعمون',
+    'Partners' => 'الشركاء ',
+    'Partners & Clients' => 'الشركاء و الداعمون ',
     'client' => 'الداعمون',
+    'partner' => 'الشركاء ',
   ),
   'partners' => 'الشركاء والداعمون',
-  'policies' =>
+  'policies' => 
   array (
     'Agreement' => 'اتفاقية الموقع',
     'All Policies' => 'سياسات الموقع',
@@ -279,7 +274,7 @@ return array (
     'Refund Policy' => 'سياسة الاسترجاع',
     'Usage Policy' => 'سياسة الاستخدام',
   ),
-  'services' =>
+  'services' => 
   array (
     'add service' => 'اضافة خدمة',
     'edit service' => 'تعديل الخدمة',
@@ -287,7 +282,7 @@ return array (
     'service price' => 'سعر الخدمة',
     'services' => 'الخدمات',
   ),
-  'settings' =>
+  'settings' => 
   array (
     'Action' => 'عمل',
     'Clear Dropzone' => 'حذف الصورة',
@@ -324,8 +319,8 @@ return array (
     'Twitter' => 'تغريد',
     'Website Fav Icon' => 'أيقونة الموقع  ',
     'Website Logo' => 'شعار الموقع',
-    'Website Logo Dark' => 'شعار الموقع الغامق',
     'Website Logo & Fav Icon' => 'شعار الموقع وأيقونةالموقع',
+    'Website Logo Dark' => 'شعار الموقع الغامق',
     'Website Social Media Links' => 'روابط مواقع التواصل الاجتماعي',
     'Whatsapp number' => 'رقم واتس اب',
     'Youtube' => 'يوتيوتب',
@@ -341,12 +336,11 @@ return array (
     'aboutUs_image9' => 'صورة من نحن رقم 9',
     'home_image1' => 'الخلفية',
     'home_image2' => 'الخدمات',
-
     'model' => 'الإعدادات',
     'site_footer_logo' => 'شعار الفوتر',
     'url' => 'فيديو من نحن',
   ),
-  'slider' =>
+  'slider' => 
   array (
     'Add Slider' => 'أضف سلايدر',
     'All Sliders' => 'جميع السلايدرز',
@@ -368,8 +362,7 @@ return array (
     'original_price' => 'السعر الأصلي',
     'price' => 'السعر',
   ),
-
-  'user' =>
+  'user' => 
   array (
     'Add user' => 'إضافة مستخدم',
     'All users' => 'جميع المستخدمين',
