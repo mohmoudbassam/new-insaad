@@ -1,6 +1,7 @@
 <?php
 
 return array (
+
     "services"=>[
         'isnaad services' => 'isnaad services',
 
@@ -179,4 +180,5 @@ return array (
     'enter_tracking_number'=>'أدخل رقم التتبع',
     'click_tack'=>'تتبع',
     'your_tracking_number_is_not_found'=>'رقم التتبع غير موجود',
+
 );

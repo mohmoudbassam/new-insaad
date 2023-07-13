@@ -1,5 +1,6 @@
 <?php
 
+
 return array(
     'Be careful It will be deleted!' => 'انتبه! سوف تحذف',
     'It was done successfully!' => 'تم ذلك بنجاح!',
@@ -403,4 +404,5 @@ return array(
             'role' => 'الوظيفة',
             'users' => 'المستخدمين',
         ),
+
 );
