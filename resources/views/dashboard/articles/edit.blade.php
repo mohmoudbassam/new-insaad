@@ -126,7 +126,7 @@
                                                     </div>
                                                     @enderror
                                                     <div class="input-group input-group-merge">
-                                        <textarea type="text" id="description_en" class="form-control"
+                                        <textarea type="text" id="description_en" class="form-control editor"
                                                   name="description_en"
                                                   placeholder="{{__('dashboard.main.description_en')}}">{!! $article->getTranslation('description','en') !!}</textarea>
                                                     </div>
