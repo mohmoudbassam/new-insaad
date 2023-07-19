@@ -38,16 +38,15 @@
         </section>
 
 
+        @include('website.home.partials.about-us')
+        @include('website.home.partials.services-short')
+        @include('website.home.partials.percentage_and_counts')
+        @include('website.home.partials.services')
 
-@include('website.home.partials.about-us')
-@include('website.home.partials.services-short')
-@include('website.home.partials.percentage_and_counts')
-@include('website.home.partials.services')
-
-@include('website.home.partials.clients')
-@include('website.home.partials.partners')
-@include('website.home.partials.start')
-@include('website.home.partials.contact-us')
+        @include('website.home.partials.clients')
+        @include('website.home.partials.partners')
+        @include('website.home.partials.start')
+        @include('website.home.partials.contact-us')
 
     </main>
 

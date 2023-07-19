@@ -99,7 +99,7 @@
                                                     </div>
                                                     @enderror
                                                     <div class="input-group input-group-merge">
-                                        <textarea type="text" id="first-name-icon" class="form-control"
+                                        <textarea type="text" id="description_ar" class="form-control editor"
                                                   name="description_ar"
                                                   placeholder="{{__('dashboard.main.description_ar')}}">{{ old('description_ar')}}</textarea>
 
@@ -121,7 +121,7 @@
                                                     </div>
                                                     @enderror
                                                     <div class="input-group input-group-merge">
-                                        <textarea type="text" id="first-name-icon" class="form-control"
+                                        <textarea type="text" id="description_en" class="form-control editor"
                                                   name="description_en"
                                                   placeholder="{{__('dashboard.main.description_en')}}">{{ old('description_en')}}</textarea>
                                                     </div>
@@ -163,11 +163,20 @@
 @endsection
 
 @push('bottom-js')
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{ asset('assets/dashboard/js/image-uploader.js') }}"></script>
     {{--<script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>--}}
+    <script src="//cdn.ckeditor.com/4.16.0/full/ckeditor.js"></script>
     <script>
         $('.image-uploader').imageUploader();
+        $("textarea.editor").each(function () {
+            CKEDITOR.replace($(this).attr("id"), {
+                filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ,'lang'=>app()->getLocale()])}}",
+                filebrowserUploadMethod: "form"
+            });
+        });
     </script>
+
     {{--    <script src="{{asset('assets/dashboard/js/form.validation.script.js')}}"></script>--}}
 @endpush
