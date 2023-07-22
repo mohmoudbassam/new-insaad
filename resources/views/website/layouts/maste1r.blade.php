@@ -10,7 +10,7 @@
 
     @yield("seo-tags")
 
-    <title>{{ config("settings.site_". app()->getLocale() . "_title") }} @yield("page-title")</title>
+    <title>@yield("page-title")</title>
 
     <!--== Favicon ==-->
     <link rel="shortcut icon" href="{{asset( config("settings.site_favicon")) }}" type="image/x-icon"/>
