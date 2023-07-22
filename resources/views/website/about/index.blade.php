@@ -1,7 +1,7 @@
 @extends("website.layouts.master")
 
 @section("page-title")
-    - {{ __("home.about") }}
+     {{ __("home.about") }}
 @endsection
 
 @section("seo-tags")

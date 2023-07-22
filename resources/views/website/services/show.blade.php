@@ -1,7 +1,7 @@
 @extends("website.layouts.master")
 
 @section("page-title")
-    - {{$service->title }}
+    {{$service->title }}
 @endsection
 
 @section("seo-tags")

@@ -1,7 +1,7 @@
 @extends("website.layouts.master")
 
 @section("page-title")
-    - {{ __("home.refund") }}
+     {{ __("home.refund") }}
 @endsection
 
 @section("seo-tags")
