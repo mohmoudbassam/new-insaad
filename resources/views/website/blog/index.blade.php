@@ -35,7 +35,7 @@
                 @foreach($articles as $index => $article)
 
                     <div class="col-lg-4 mb-3 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card g-box">
                             <img src="{{ asset( 'storage/'.$article->image)  }}"
                                  class="card-img-top" alt="Card Image">
                             <div class="card-body d-flex flex-column">
