@@ -1,7 +1,7 @@
 @extends("website.layouts.master")
 
 @section("page-title")
-     {{ __("home.our_services") }}
+    {{ __("home.our_services") }}
 @endsection
 
 @section("seo-tags")
@@ -31,23 +31,24 @@
     <section class="ourServices blogs" style="margin-top: 33px; ">
         <div class="container">
 
-            <div class="row" >
-            @foreach($articles as $index => $article)
+            <div class="row">
+                @foreach($articles as $index => $article)
 
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="{{ asset( 'storage/'.$article->image)  }}"
+                                 class="card-img-top" alt="Card Image">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">{{ $article->title }}</h5>
+                                <p class="card-text mb-4">{!! substr(strip_tags( $article->description),0,100) !!}</p>
+                                <a href="{{route('website.show',['lang'=>app()->getLocale(),'slug'=>$article->slug])}}" class="btn btn-primary mt-auto align-self-start">{{ __('dashboard.main.read_more') }}</a>
+                            </div>
+                        </div>
+                    </div>
 
-              <div class="col-lg-4">
-                  <div class="card g-box " style="width: 25rem;">
-                      <img src="{{ asset( 'storage/'.$article->image)  }}" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <h5 class="card-title">{{ $article->title }}</h5>
-                          <p class="card-text">{!! substr(strip_tags( $article->description),0,100) !!}</p>
-                          <a href="{{route('website.show',['lang'=>app()->getLocale(),'slug'=>$article->slug])}}" class="btn btn-primary">{{ __('dashboard.main.read_more') }}</a>
-                      </div>
-                  </div>
-              </div>
-
-            @endforeach
+                @endforeach
             </div>
+
             <div class="row ">
                 <div class="d-flex justify-content-center">
                     <div>
