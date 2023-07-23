@@ -14,7 +14,7 @@ class BlogController extends Controller
     public function index()
     {
 
-        $articles = Article::query()->paginate(2);
+        $articles = Article::query()->paginate(3);
         $services=Service::query()->get();
         return view("website.blog.index", ['articles' => $articles,'services' => $services]);
     }
