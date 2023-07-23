@@ -28,7 +28,7 @@
 
         </div>
     </section>
-    <section class="ourServices blogs" style="margin-top: 30px;">
+    <section class="ourServices blogs" style="margin-top: 33px; ">
         <div class="container">
 
             <div class="row mt-10" >
@@ -36,7 +36,7 @@
 
 
               <div class="col-lg-4">
-                  <div class="card g-box" style="width: 18rem;">
+                  <div class="card g-box " style="width: 18rem;">
                       <img src="{{ asset( 'storage/'.$article->image)  }}" class="card-img-top" alt="...">
                       <div class="card-body">
                           <h5 class="card-title">{{ $article->title }}</h5>
