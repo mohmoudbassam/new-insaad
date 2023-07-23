@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="apple-touch-icon" href="{{asset( config("settings.site_favicon")) }}"/>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <link rel="icon" type="image/png" href="{{asset(config('settings.site_logo'))}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="#333333" data-react-helmet="true" name="theme-color" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="#333333" data-react-helmet="true" name="theme-color"/>
 
 
-    <link rel="stylesheet" href="{{ mix('assets/website/css/bundle-style.css') }}" />
+    <link rel="stylesheet" href="{{ mix('assets/website/css/bundle-style.css') }}"/>
 
     @if(app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="{{ asset('assets/website/SCSS/ar-eg/layout-ar.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/website/SCSS/ar-eg/layout-ar.css') }}"/>
     @else
-        <link rel="stylesheet" href="{{ asset('assets/website/SCSS/en-us/layout.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/website/SCSS/en-us/layout.css') }}"/>
     @endif
 
     @yield("seo-tags")
@@ -49,7 +49,7 @@
 
 </head>
 
-<body  >
+<body>
 @if(Route::is('website.index'))
     @include('website.partials.header')
 @else
@@ -76,18 +76,31 @@
 </main>
 
 @include('website.partials.footer')
-    <div class="over-nav"></div>
+<div class="over-nav"></div>
 
-    <!-- loading section-->
-    <div class="loading" delay-hide="1000"></div>
+<!-- loading section-->
+<div class="loading" delay-hide="1000"></div>
 
-    <a href="https://wa.me/{{ config("settings.social_whatsapp")}}" class="whatsAppFixed" target="_blank"><i class="fab fa-whatsapp"></i> </a>
+<a href="https://wa.me/{{ config("settings.social_whatsapp")}}" class="whatsAppFixed" target="_blank"><i
+        class="fab fa-whatsapp"></i> </a>
 
 @stack('scripts')
 
 @livewireScripts
 {{--@if(app()->getLocale() == 'ar')--}}
-    <script src="{{mix('assets/website/js/bundle-script.js')}}"></script>
+<script src="{{mix('assets/website/js/bundle-script.js')}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XEXMHRTS8C"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-XEXMHRTS8C');
+</script>
 {{--@else--}}
 {{--    <script src="{{mix('assets/website/js/bundle-script.js')}}"></script>--}}
 {{--@endif--}}
