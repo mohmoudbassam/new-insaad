@@ -30,9 +30,7 @@
     </section>
     <section class="ourServices blogs" style="margin-top: 30px;">
         <div class="container">
-            @error('services')
-            <div class="alert alert-danger">{{$message}}</div>
-            @enderror
+
             <div class="row mt-10" >
             @foreach($articles as $index => $article)
 
@@ -47,30 +45,7 @@
                       </div>
                   </div>
               </div>
-{{--                <div class="service" style="margin-top: 30px" data-aos="fade-up">--}}
-{{--                    <div class="row">--}}
 
-{{--                        <div class="col-lg-6">--}}
-{{--                            <div class="service-text">--}}
-{{--                                <h2>{{ $article->title }}</h2>--}}
-{{--                                <p>{!! substr( $article->description,0,400) !!}</p>--}}
-
-{{--                                <a href="{{route('website.show',['lang'=>app()->getLocale(),'slug'=>$article->slug])}}" class="btn  request-service">--}}
-
-{{--                                    <span style="color: red">{{ __('dashboard.main.read_more') }}</span>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-lg-6">--}}
-{{--                            <div class="img">--}}
-{{--                                <!-- asset( $service->image->image) -->--}}
-{{--                                --}}{{--                                @dd($service->image)--}}
-{{--                                <img src="{{ asset( 'storage/'.$article->image)  }}" class="img-fluid"--}}
-{{--                                     alt="service">--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
             @endforeach
             </div>
             <div class="row ">
