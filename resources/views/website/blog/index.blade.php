@@ -36,7 +36,7 @@
 
 
               <div class="col-lg-4">
-                  <div class="card g-box " style="width: 18rem;">
+                  <div class="card g-box " style="width: 22rem;">
                       <img src="{{ asset( 'storage/'.$article->image)  }}" class="card-img-top" alt="...">
                       <div class="card-body">
                           <h5 class="card-title">{{ $article->title }}</h5>
