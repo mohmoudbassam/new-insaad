@@ -31,7 +31,7 @@
     <section class="ourServices blogs" style="margin-top: 33px; ">
         <div class="container">
 
-            <div class="row mt-10" >
+            <div class="row" >
             @foreach($articles as $index => $article)
 
 
@@ -40,7 +40,7 @@
                       <img src="{{ asset( 'storage/'.$article->image)  }}" class="card-img-top" alt="...">
                       <div class="card-body">
                           <h5 class="card-title">{{ $article->title }}</h5>
-                          <p class="card-text">{!! substr( $article->description,0,400) !!}</p>
+                          <p class="card-text">{{$article->description}}</p>
                           <a href="{{route('website.show',['lang'=>app()->getLocale(),'slug'=>$article->slug])}}" class="btn btn-primary">{{ __('dashboard.main.read_more') }}</a>
                       </div>
                   </div>
