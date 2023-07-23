@@ -41,7 +41,7 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">{{ $article->title }}</h5>
                                 <p class="card-text mb-4">{!! substr(strip_tags( $article->description),0,100) !!}</p>
-                                <a href="{{route('website.show',['lang'=>app()->getLocale(),'slug'=>$article->slug])}}" class="btn btn-primary mt-auto align-self-start">{{ __('dashboard.main.read_more') }}</a>
+                                <a  href="{{route('website.show',['lang'=>app()->getLocale(),'slug'=>$article->slug])}}" class="btn btn-danger mt-auto align-self-start">{{ __('dashboard.main.read_more') }}</a>
                             </div>
                         </div>
                     </div>
