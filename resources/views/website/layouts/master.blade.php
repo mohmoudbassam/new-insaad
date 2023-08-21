@@ -81,7 +81,7 @@
 <!-- loading section-->
 <div class="loading" delay-hide="1000"></div>
 
-<a href="https://wa.me/{{ config("settings.social_whatsapp")}}" class="whatsAppFixed" target="_blank"><i
+<a href="https://wa.me/+966533933078" class="whatsAppFixed" target="_blank"><i
         class="fab fa-whatsapp"></i> </a>
 
 @stack('scripts')
