@@ -19,7 +19,10 @@ class TrackController extends Controller
     public function getTrackingUrl($tracking_number)
     {
         $order = DB::connection('portal')->table('orders')
-            ->where('tracking_number', $tracking_number)
+           ->where(function ($query) use ($tracking_number) {
+                $query->where('tracking_number', $tracking_number)
+                    ->orWhere('order_number', $tracking_number);
+            })
             ->where('active', 1)->first();
         $carrier = DB::connection('portal')->table('carriers')
             ->where('name', $order->carrier ?? '')->first();
