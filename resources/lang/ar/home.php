@@ -24,9 +24,9 @@ return array (
   'Number of requests per week (without an advertising campaign)' => 'عدد الطلبات الاسبوعية (من دون وجود حملةإعلانية)',
   'Our Clients' => 'عملائنا',
   'Our Vision' => 'رؤيتنا',
-  'Please fill in the information below and we will contact you as soon as possible' => 
+  'Please fill in the information below and we will contact you as soon as possible' =>
   array (
-    '' => 
+    '' =>
     array (
       '' => 'نآمل تعبئة البيانات ادناه وسيتم التواصل معكم في اقرب وقت ..',
     ),
@@ -60,7 +60,7 @@ return array (
   'custom-clearness-desc2' => 'نقدم جملة من الخدمات المساندة في التخليص الجمركي في كافة المنافذ البرية والجوية والبحرية في المملكة العربية السعودية للصادرات والواردات على حد سواء.',
   'designed' => 'تنفيذ',
   'english' => 'الإنجليزية',
-  'enter_tracking_number' => 'أدخل رقم التتبع',
+  'enter_tracking_number' => 'أدخل رقم التتبع او رقم الطلب',
   'faq' => ' الأسئلة الشائعة ',
   'fast contact' => 'اتصال سريع',
   'focus' => '" مع إسناد لا تشيل هم وخلها علينا وركز كيف تزيد طلباتك لأن إسناد دائما …#سند لك"',
@@ -141,7 +141,7 @@ return array (
   'secure shopping' => 'التسوق الآمن',
   'selected services' => 'الخدمات المطلوبة',
   'send request' => 'ارسال الطلب',
-  'services' => 
+  'services' =>
   array (
     'custom-clearness' => 'custom-clearness',
     'isnaad services' => 'خدمات اسناد',

@@ -24,9 +24,9 @@ return array (
   'Number of requests per week (without an advertising campaign)' => 'Number of requests per week (without an advertising campaign)',
   'Our Clients' => 'Our Clients',
   'Our Vision' => 'Our Vision',
-  'Please fill in the information below and we will contact you as soon as possible' => 
+  'Please fill in the information below and we will contact you as soon as possible' =>
   array (
-    '' => 
+    '' =>
     array (
       '' => 'Please fill in the information below and we will contact you as soon as possible.',
     ),
@@ -58,7 +58,7 @@ return array (
   'custom-clearness-desc2' => 'We offer a range of supporting services relating customs clearance at land, air and sea ports in the Kingdom of Saudi Arabia for both exports and imports.',
   'designed' => 'تنفيذ',
   'english' => 'English',
-  'enter_tracking_number' => 'enter tracking number',
+  'enter_tracking_number' => 'enter tracking number or order number',
   'faq' => 'FAQs',
   'fast contact' => 'اتصال سريع',
   'focus' => 'Rely on us to support your logistic operations while you grow in the market',
@@ -139,7 +139,7 @@ return array (
   'secure shopping' => 'التسوق الآمن',
   'selected services' => 'الخدمات المطلوبة',
   'send request' => 'ارسال الطلب',
-  'services' => 
+  'services' =>
   array (
     'custom-clearness' => 'custom-clearness',
     'isnaad services' => 'Isnaad services',
