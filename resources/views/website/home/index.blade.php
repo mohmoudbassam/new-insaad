@@ -22,18 +22,18 @@
     <main>
         <section class="main-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="slider-content">
-                            <h1><span>{{trans('home.isnaad')}}</span>{{trans('home.connect_you_with_clients')}}</h1>
-                            <p>
-                                {{trans('home.manage & deliver')}}
-                                <span>{{trans('home.because isnaad')}}</span>
-                            </p>
-                            <a href="#about-us" class="btn secondaryBtn shared">{{trans('home.why isnaad?')}}</a>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="row">--}}
+{{--                    <div class="col-xl-6">--}}
+{{--                        <div class="slider-content">--}}
+{{--                            <h1><span>{{trans('home.isnaad')}}</span>{{trans('home.connect_you_with_clients')}}</h1>--}}
+{{--                            <p>--}}
+{{--                                {{trans('home.manage & deliver')}}--}}
+{{--                                <span>{{trans('home.because isnaad')}}</span>--}}
+{{--                            </p>--}}
+{{--                            <a href="#about-us" class="btn secondaryBtn shared">{{trans('home.why isnaad?')}}</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </section>
 
