@@ -1586,6 +1586,7 @@ footer .copyRights p {
     display: flex;
     align-items: center;
     position: relative;
+
     filter: brightness(2.5) !important;
 }
 
