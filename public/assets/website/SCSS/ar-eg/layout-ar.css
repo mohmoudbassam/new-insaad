@@ -1577,8 +1577,8 @@ footer .copyRights p {
 
 /*pages*/
 .main-section {
-    /*background: url("../../images/main-slider.png") no-repeat;*/
-    background: url("../../images/main-slider-day-saudi.png") no-repeat;
+    background: url("../../images/main-slider.png") no-repeat;
+    /*background: url("../../images/main-slider-day-saudi.png") no-repeat;*/
     background-position: center;
     background-size: cover;
     min-height: 641px;
@@ -1587,7 +1587,7 @@ footer .copyRights p {
     align-items: center;
     position: relative;
 
-    filter: brightness(2.5) !important;
+    /*filter: brightness(2.5) !important;*/
 }
 
 .main-section::after {
@@ -1966,8 +1966,8 @@ footer .copyRights p {
 
 .start {
     padding: 80px 0;
-    /*background: url("../../images/start.png") no-repeat;*/
-    background: url("../../images/start-day.png") no-repeat;
+    background: url("../../images/start.png") no-repeat;
+    /*background: url("../../images/start-day.png") no-repeat;*/
     background-position: center;
     background-size: cover;
     position: relative;
