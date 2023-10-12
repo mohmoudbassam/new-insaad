@@ -25,12 +25,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="complaints" data-aos="fade-up">
-                    <p class="message">{{trans('contact-us.complaint')}}</p>
-                    <a href="#" class="shared primaryBtn">{{trans('home.contact_us')}}</a>
-                </div>
-            </div>
+{{--            <div class="col-lg-6">--}}
+{{--                <div class="complaints" data-aos="fade-up">--}}
+{{--                    <p class="message">{{trans('contact-us.complaint')}}</p>--}}
+{{--                    <a href="#" class="shared primaryBtn">{{trans('home.contact_us')}}</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 </section>
